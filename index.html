@@ -57,27 +57,23 @@
     <script>
     $(function() {
         //设置起始日期
-        countTime('2017/05/12 00:00', 'day', 'hour', 'minute', 'second');
+        countTime('2019/04/26 23:00', 'day', 'hour', 'minute', 'second');
         var days = $('#day').text();
-
         // 设置标题
         if (parseInt(days / 365) != 0) {
-            $(document).attr("title", "在一起" + parseInt(days / 365) + "年,感谢相伴。");
+            $(document).attr("title", "遇见你" + parseInt(days / 365) + "年,很开心。");
         } else if (parseInt(days / 30) != 0) {
-            $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,感谢相伴。");
+            $(document).attr("title", "遇见你" + parseInt(days / 30) + "个月,很开心。");
         } else
-            $(document).attr("title", "在一起" + days + "天,感谢相伴。");
-
+            $(document).attr("title", "遇见你" + days + "天,很开心。");
         //设置每一张图片对应的文字
         var says = new Array(
-            "一路相伴,感谢有你",
-            "走过很多路，拍过很多照片，却只爱了一个人",
-            "希望能够一直这样拥你在怀里",
-            
-            "时间不停，爱你不止"
+            "","","",""
+//             "一路相伴,感谢有你",
+//             "走过很多路，拍过很多照片，却只爱了一个人",
+//             "希望能够一直这样拥你在怀里",
+//             "时间不停，爱你不止"
         );
-
-
         var start = function() {
             var index = 0;
             var rate = 6000;
@@ -90,7 +86,6 @@
          	};
             setInterval(_play, rate);
         }();
-
     });
     </script>
 </body>
